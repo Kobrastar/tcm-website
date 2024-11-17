@@ -1,0 +1,169 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Persona;
+    src: url(p5hatty.ttf);
+}
+
+@font-face {
+    font-family: supersona;
+    src: url(Expose-Regular.otf);
+}
+
+@font-face {
+    font-family: hipersona;
+    src: url(Persona5MenuFontPrototype-Regular.ttf);
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.chardivs {
+    width: 40%; /* Ocupa 30% da largura em dispositivos maiores */
+    margin: 20px 0; /* Espaço entre os blocos */
+    display: flex;
+    flex-direction: column; /* Imagem em cima do texto */
+    align-items: center; /* Centraliza os itens */
+    text-align: center;
+}
+
+.chardivstxt {
+    font-family: supersona;
+    font-size: 24px; /* Tamanho inicial para texto */
+    margin-top: 10px;
+}
+
+.chardivsimg {
+    width: 340px; /* Aumentado para destacar mais */
+    height: 340px;
+    border-radius: 50%; /* Imagens circulares */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 3px solid #000000;
+    box-shadow: 5px rgba(0, 0, 0, 0.5);
+}
+
+.chardivsimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem se encaixe sem deformar */
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a .Name:hover{
+    text-decoration: underline;
+    font-size: 49px;
+}
+
+a .Codename:hover{
+    font-size: 71px;
+    text-decoration: underline;
+}
+
+.Name {
+    font-size: 48px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.Codename {
+    font-size: 70px; /* Aumentado o tamanho dos codenames */
+}
+
+/* Cores específicas para cada personagem */
+#Jokershow .Codename {
+    color: red;
+}
+
+#Skullshow .Codename {
+    color: yellow;
+}
+
+#Panthershow .Codename {
+    color: #861d1d;
+}
+
+#Morganashow .Codename {
+    color: #3c3c90;
+}
+
+#Foxshow .Codename {
+    color: rgb(38, 207, 212);
+}
+
+#Queenshow .Codename {
+    color: rgba(38, 206, 212, 0.8);
+}
+
+#Oracleshow .Codename {
+    color: rgba(39, 235, 13, 0.8);
+}
+
+#Noirshow .Codename {
+    color: rgba(206, 12, 231, 0.8);
+}
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 768px) {
+    .chardivs {
+        width: 45%; /* Ocupa 45% da largura em telas médias */
+    }
+
+    .chardivsimg {
+        width: 140px; /* Ajusta o tamanho das imagens no tablet */
+        height: 140px;
+    }
+
+    .chardivstxt {
+        font-size: 22px; /* Reduz o texto em telas médias */
+    }
+
+    .Name {
+        font-size: 24px; /* Ajusta o tamanho para destaque */
+    }
+
+    .Codename {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chardivs {
+        width: 100%; /* Ocupa 100% da largura em telas pequenas */
+        margin: 10px 0; /* Espaço entre os blocos */
+    }
+
+    .chardivsimg {
+        width: 120px; /* Ajusta o tamanho das imagens em celulares */
+        height: 120px;
+    }
+
+    .chardivstxt {
+        font-size: 20px; /* Ajusta o tamanho para telas muito pequenas */
+    }
+
+    .Name {
+        font-size: 22px; /* Mantém os nomes visíveis */
+    }
+
+    .Codename {
+        font-size: 18px;
+    }
+}
+

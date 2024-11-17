@@ -1,0 +1,154 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Persona;
+    src: url(p5hatty.ttf);
+}
+
+@font-face {
+    font-family: supersona;
+    src: url(Expose-Regular.otf);
+}
+
+@font-face {
+    font-family: hipersona;
+    src: url(Persona5MenuFontPrototype-Regular.ttf);
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.perdivs {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.perdivs a {
+    text-decoration: none;
+}
+
+.perdivstxt {
+    font-family: supersona;
+    font-size: 50px; /* Aumentado para melhor visibilidade */
+    margin-top: 10px;
+}
+
+.perdivsimg {
+    width: 340px; /* Ajustado para evitar cortes */
+    height: auto; /* Mantém a proporção das imagens */
+    max-width: 100%; /* Garante que não ultrapassem o container */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.perdivsimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Evita cortes na imagem */
+}
+
+.pantherlogo{
+    padding-top: 95px;
+}
+
+a .Codename:hover{
+    font-size: 71px;
+    text-decoration: underline;
+}
+
+.Codename {
+    font-size: 70px; /* Texto maior para melhor leitura */
+    font-family: supersona;
+    margin-top: 10px;
+}
+
+/* Cores específicas */
+#Arseneshow .Codename {
+    color: red;
+}
+
+#Kidshow .Codename {
+    color: yellow;
+}
+
+#Carmenshow .Codename {
+    color: #861d1d;
+}
+
+#Diegoshow .Codename {
+    color: #3c3c90;
+}
+
+#Japashow .Codename {
+    color: rgb(38, 207, 212);
+}
+
+#Johannashow .Codename {
+    color: rgba(38, 206, 212, 0.8);
+}
+
+#Necroshow .Codename {
+    color: rgba(39, 235, 13, 0.8);
+}
+
+#Ladyshow .Codename {
+    color: rgba(206, 12, 231, 0.8);
+}
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 768px) {
+    .perdivs {
+        width: 45%;
+    }
+
+    .perdivsimg {
+        width: 120px; /* Ajusta para telas médias */
+    }
+
+    .perdivstxt {
+        font-size: 26px; /* Ajusta o tamanho do texto */
+    }
+
+    .Codename {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .perdivs {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .perdivsimg {
+        width: 100px; /* Ajuste menor para telas pequenas */
+    }
+
+    .perdivstxt {
+        font-size: 22px;
+    }
+
+    .Codename{
+        font-size: 24px;
+    }
+}

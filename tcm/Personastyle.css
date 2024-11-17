@@ -1,0 +1,242 @@
+* {
+    margin: 0 auto;
+    background-color: #0d0d0d;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Persona;
+    src: url(p5hatty.ttf);
+}
+
+@font-face {
+    font-family: supersona;
+    src: url(Expose-Regular.otf);
+}
+
+@font-face {
+    font-family: hipersona;
+    src: url(Persona5MenuFontPrototype-Regular.ttf);
+}
+
+
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2px;
+    justify-content: center;
+}
+
+.phantom,
+.thieves {
+    height: 300px;
+    width: 30%;
+}
+
+.logo {
+    height: 40%;
+    width: 640px;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    height: 60px;
+    width: 98%;
+    border: solid red 2px;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.5);
+    background-color: red;
+    margin-top: 10px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.links {
+    background-color: red;
+}
+
+.nav-itens {
+    list-style: none;
+    display: flex;
+    color: whitesmoke;
+    user-select: none;
+    font-size: 40px;
+    justify-content: space-between;
+    font-family: Persona;
+    background-color: red;
+    height: 100%;
+}
+
+.nav-itens > li {
+    padding-left: 20px;
+    border-radius: 20px;
+    background-color: red;
+}
+
+.nav-itens > li:hover {
+    text-decoration: underline;
+    background-color: red;
+}
+
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+    background-color: red;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+main{
+    height: auto;
+}
+
+.fraseinicial {
+    font-size: 60px;
+    text-align: center;
+    display: block;
+    color: whitesmoke;
+    margin-top: 30px;
+    font-family: hipersona;
+}
+
+.Textointrodutorio {
+    font-size: 40px;
+    text-align: center;
+    display: block;
+    font-family: Persona;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.Textointrodutorio a {
+    color: white;
+    text-decoration: underline;
+}
+
+.Textointrodutorio a:hover {
+    font-size: 41px;
+}
+
+.photoone {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    border: solid 3px rgb(163, 2, 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+.photoone img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+footer{
+    background-color: #0f0f0f;
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 1280px) {
+    .Phantom,
+    .Thieves {
+        display: none; /* Oculta as imagens se não couberem */
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Muda para coluna em telas menores */
+        align-items: center; /* Centraliza verticalmente */
+    }
+
+    .Phantom,
+    .Thieves {
+        display: none; /* Oculta as imagens */
+    }
+
+    .logo {
+        width: 80%; /* Ajusta a largura da logo */
+    }
+
+    nav {
+        width: 100%; /* Faz o nav ocupar toda a largura da tela */
+        justify-content: center; /* Centraliza os itens do nav */
+    }
+
+    .nav-itens {
+        font-size: 20px; /* Reduz o tamanho da fonte */
+        flex-direction: column; /* Muda para coluna no menu */
+    }
+
+    .fraseinicial {
+        font-size: 48px;
+        margin-top: 20px;
+    }
+
+    .Textointrodutorio {
+        font-size: 32px;
+    }
+
+    .Textointrodutorio a:hover {
+        font-size: 34px;
+    }
+
+    .photoone {
+        width: 90%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-itens {
+        font-size: 16px; /* Ajusta ainda mais o tamanho da fonte */
+    }
+
+    iframe {
+        height: 1200px; /* Reduz ainda mais a altura do iframe em telas muito pequenas */
+    }
+
+    .fraseinicial {
+        font-size: 36px;
+        margin-top: 15px;
+    }
+
+    .Textointrodutorio {
+        font-size: 24px;
+    }
+
+    .Textointrodutorio a:hover {
+        font-size: 26px;
+    }
+
+    .photoone {
+        width: 100%;
+        margin-top: 15px;
+    }
+}

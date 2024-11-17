@@ -1,0 +1,131 @@
+* {
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: Persona;
+    src: url(p5hatty.ttf);
+}
+
+@font-face {
+    font-family: supersona;
+    src: url(Expose-Regular.otf);
+}
+
+@font-face {
+    font-family: hipersona;
+    src: url(Persona5MenuFontPrototype-Regular.ttf);
+}
+
+main {
+    width: 100%;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.Title {
+    font-size: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.Fraseinicial {
+    font-size: 50px;
+    font-family: supersona;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.firstsection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 700px; 
+    padding: 20px;
+    gap: 20px; 
+}
+
+.secondsection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 700px; 
+    padding: 20px;
+    gap: 20px; 
+}
+
+.chardaily {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chardaily img {
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.daytext {
+    flex: 1;
+    font-family: Persona, sans-serif;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    line-height: 1.2; 
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.thirdsection{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 70px;
+}
+
+.thirdsection p{
+    font-family: persona;
+    color: white;
+}
+
+#jokertitle{
+    color: red;
+}
+
+#oracletitle{
+    color: rgba(39, 235, 13, 0.8);
+}
+
+#foxtitle{
+    color: rgb(38, 207, 212);
+}
+
+#skulltitle{
+    color: yellow;
+}
+
+#panthertitle{
+    color: #861d1d;
+}
+
+#diegotitle{
+    color: #3c3c90;
+}
+
+#queentitle{
+    color: rgba(38, 206, 212, 0.8);
+}
+
+#noirtitle{
+    color: rgba(206, 12, 231, 0.8);
+}
